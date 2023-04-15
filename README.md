@@ -13,14 +13,14 @@ npm install --save custombuttonui
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'custombuttonui'
+import { CustomButton } from 'custombuttonui'
 import 'custombuttonui/dist/index.css'
 
-class Example extends Component {
+class Example {
   render() {
-    return <MyComponent />
+    return <CustomButton text={'Primary'} type={'primary'} />
   }
 }
 ```
