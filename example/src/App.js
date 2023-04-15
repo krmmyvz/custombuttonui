@@ -1,10 +1,18 @@
 import React from 'react'
 
-import { ExampleComponent } from 'custombuttonui'
+import { CustomButton } from 'custombuttonui'
 import 'custombuttonui/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div className='container'>
+      <CustomButton text={'Primary'} type={'primary'} />
+      <CustomButton text={'Default'} type={'default'} />
+      <CustomButton text={'Dashed'} type={'dashed'} />
+      <CustomButton text={'Text'} type={'text'} />
+      <CustomButton text={'Link'} type={'link'} />
+    </div>
+  )
 }
 
 export default App

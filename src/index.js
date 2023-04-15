@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './styles.module.css'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const CustomButton = ({ text, type }) => {
+  return (
+    <button className={`${styles.btn} ${styles[type]}`}>{text} Button</button>
+  )
 }
